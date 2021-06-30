@@ -1,0 +1,10 @@
+{   
+    "parent": "block/orientable",
+    "textures": {
+        "top": "cacadditions:block/snow",
+        "front": "cacadditions:block/icy_grass",
+        "side": "cacadditions:block/icy_grass",
+        "back": "cacadditions:block/icy_grass",
+        "bottom": "cacadditions:block/icy_stone"
+    }
+  }  

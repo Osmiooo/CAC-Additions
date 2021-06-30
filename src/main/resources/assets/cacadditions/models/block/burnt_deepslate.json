@@ -1,0 +1,10 @@
+{   
+    "parent": "block/orientable",
+    "textures": {
+        "top": "cacadditions:block/burnt_deepslate_top",
+        "front": "cacadditions:block/burnt_deepslate",
+        "side": "cacadditions:block/burnt_deepslate",
+        "back": "cacadditions:block/burnt_deepslate",
+        "bottom": "cacadditions:block/burnt_deepslate_top"
+    }
+  }  

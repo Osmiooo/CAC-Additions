@@ -1,0 +1,10 @@
+{   
+    "parent": "block/orientable",
+    "textures": {
+        "top": "cacadditions:block/iced_deepslate_diamond_ore_top",
+        "front": "cacadditions:block/iced_deepslate_diamond_ore",
+        "side": "cacadditions:block/iced_deepslate_diamond_ore",
+        "back": "cacadditions:block/iced_deepslate_diamond_ore",
+        "bottom": "cacadditions:block/iced_deepslate_diamond_ore_top"
+    }
+  }  

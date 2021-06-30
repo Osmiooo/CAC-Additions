@@ -1,0 +1,10 @@
+{   
+    "parent": "block/orientable",
+    "textures": {
+        "top": "cacadditions:block/iced_deepslate_copper_ore_top",
+        "front": "cacadditions:block/iced_deepslate_copper_ore",
+        "side": "cacadditions:block/iced_deepslate_copper_ore",
+        "back": "cacadditions:block/iced_deepslate_copper_ore",
+        "bottom": "cacadditions:block/iced_deepslate_copper_ore_top"
+    }
+  }  

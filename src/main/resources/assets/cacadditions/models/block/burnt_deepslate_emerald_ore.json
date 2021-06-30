@@ -1,0 +1,10 @@
+{   
+    "parent": "block/orientable",
+    "textures": {
+        "top": "cacadditions:block/burnt_deepslate_emerald_ore_top",
+        "front": "cacadditions:block/burnt_deepslate_emerald_ore",
+        "side": "cacadditions:block/burnt_deepslate_emerald_ore",
+        "back": "cacadditions:block/burnt_deepslate_emerald_ore",
+        "bottom": "cacadditions:block/burnt_deepslate_emerald_ore_top"
+    }
+  }  

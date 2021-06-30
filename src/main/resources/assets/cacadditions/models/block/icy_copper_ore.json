@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "cacadditions:block/icy_copper_ore"
+    }
+}
