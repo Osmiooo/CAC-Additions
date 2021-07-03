@@ -39,5 +39,6 @@
     "block.cacadditions.burnt_stone": "Burnt Stone",
     "block.cacadditions.burnt_cobblestone": "Burnt Cobblestone",
     "block.cacadditions.burnt_deepslate": "Burnt Deepslate",
-    "block.cacadditions.burnt_cobbled_deepslate":"Burnt Cobbled Deepslate"
+    "block.cacadditions.burnt_cobbled_deepslate":"Burnt Cobbled Deepslate",
+    "biome.cacadditions.ice_caves": "Ice Caves"
 }

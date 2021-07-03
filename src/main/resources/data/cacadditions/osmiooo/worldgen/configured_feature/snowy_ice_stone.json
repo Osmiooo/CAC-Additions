@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:decorated",
+    "config": {
+      "decorator": {
+        "type": "minecraft:count_extra",
+        "config": {
+          "count": 256,
+          "extra_count": 2000,
+          "extra_chance": 1
+        }
+      },
+      "feature": {
+        "type": "minecraft:decorated",
+        "config": {
+          "decorator": {
+            "type": "minecraft:square",
+            "config": {}
+          },
+          "feature": {
+            "type": "minecraft:decorated",
+            "config": {
+              "decorator": {
+                "type": "minecraft:cave_surface",
+                "config": {
+                  "surface": "floor",
+                  "floor_to_ceiling_search_range": 0
+                }
+              },
+              "feature": {
+                "type": "minecraft:ore",
+                "config": {
+                  "size": 64,
+                  "discard_chance_on_air_exposure": 0,
+                  "targets": [
+                    {
+                      "target": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "minecraft:base_stone_overworld"
+                      },
+                      "state": {
+                        "Name": "cacadditions:snowy_ice_stone"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
