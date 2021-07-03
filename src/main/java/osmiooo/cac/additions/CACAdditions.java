@@ -25,8 +25,8 @@ import osmiooo.cac.additions.world.biomes.IceCavesBiome;
 
 public class CACAdditions implements ModInitializer {
 
-	public static final Block Icy_Stone_BLOCK = Registry.register(Registry.BLOCK, id("icy_stone"), new IcyStoneBlock());
-	public static final BlockItem Icy_Stone_ITEM = Registry.register(Registry.ITEM, id("icy_stone"),
+	public static final Block Icy_Stone_BLOCK = Registry.register(Registry.BLOCK, new Identifier("cacadditions", "icy_stone"), new IcyStoneBlock());
+	public static final BlockItem Icy_Stone_ITEM = Registry.register(Registry.ITEM, new Identifier("cacadditions", "icy_stone"),
 			new BlockItem(Icy_Stone_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 	public static final Block ICED_DEEPSLATE = new Block(FabricBlockSettings.of(Material.STONE).strength(3f, 3f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block ICED_COBBLED_DEEPSLATE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.5f, 3.5f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
@@ -157,11 +157,11 @@ public class CACAdditions implements ModInitializer {
 		Reflection.initialize(
 			IceCavesBiome.class
 		);
-		
+
 	}
 
 	public static void addDefaultCaves() {
-		CaveBiomeAPI.addCaveBiome(CACAdditions.IceCaves_KEY, new Biome.MixedNoisePoint(-0.745F, -0.475F, -0.15F, -0.215F, 0.0F));
+		CaveBiomeAPI.addCaveBiome(IceCavesBiome.ICE_CAVES, new Biome.MixedNoisePoint(-0.745F, -0.475F, -0.15F, -0.215F, 0.0F));
 	}
 	
 	static {
