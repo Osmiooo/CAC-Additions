@@ -1,6 +1,13 @@
 package osmiooo.cac.additions;
 
+import com.alphastudios.cavebiomeapi.core.api.CaveBiomeAPI;
+import com.google.common.reflect.Reflection;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
@@ -11,10 +18,16 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.biome.Biome;
+import osmiooo.cac.additions.block.IcyStoneBlock;
+import osmiooo.cac.additions.world.biomes.IceCavesBiome;
 
 public class CACAdditions implements ModInitializer {
 
-	public static final Block ICY_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f, 1.5f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+	public static final Block Icy_Stone_BLOCK = Registry.register(Registry.BLOCK, id("icy_stone"), new IcyStoneBlock());
+	public static final BlockItem Icy_Stone_ITEM = Registry.register(Registry.ITEM, id("icy_stone"),
+			new BlockItem(Icy_Stone_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 	public static final Block ICED_DEEPSLATE = new Block(FabricBlockSettings.of(Material.STONE).strength(3f, 3f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block ICED_COBBLED_DEEPSLATE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.5f, 3.5f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block SNOWY_ICE_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f, 1.5f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
@@ -60,8 +73,6 @@ public class CACAdditions implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		Registry.register(Registry.BLOCK, new Identifier("cacadditions","icy_stone"), ICY_STONE);
-		Registry.register(Registry.ITEM, new Identifier("cacadditions", "icy_stone"), new BlockItem(ICY_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.BLOCK, new Identifier("cacadditions","icy_cobblestone"), ICY_COBBLESTONE);
 		Registry.register(Registry.ITEM, new Identifier("cacadditions", "icy_cobblestone"), new BlockItem(ICY_COBBLESTONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.BLOCK, new Identifier("cacadditions","iced_deepslate"), ICED_DEEPSLATE);
@@ -142,9 +153,18 @@ public class CACAdditions implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("cacadditions", "burnt_deepslate_emerald_ore"), new BlockItem(BURNT_DEEPSLATE_EMERALD_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.BLOCK, new Identifier("cacadditions","burnt_deepslate_diamond_ore"), BURNT_DEEPSLATE_DIAMOND_ORE);
 		Registry.register(Registry.ITEM, new Identifier("cacadditions", "burnt_deepslate_diamond_ore"), new BlockItem(BURNT_DEEPSLATE_DIAMOND_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
+		Reflection.initialize(
+			IceCavesBiome.class
+		);
+		
 	}
 
+	public static void addDefaultCaves() {
+		CaveBiomeAPI.addCaveBiome(CACAdditions.IceCaves_KEY, new Biome.MixedNoisePoint(-0.745F, -0.475F, -0.15F, -0.215F, 0.0F));
+	}
+	
+	static {
+        addDefaultCaves();
+    }
 }
-
-
-
