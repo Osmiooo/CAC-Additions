@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:tuff",
+    "minecraft:deepslate",
+    "cacadditions:icy_stone",
+    "cacadditions:iced_deepslate",
+    "cacadditions:burnt_stone",
+    "cacadditions:burnt_deepslate"
+  ]
+}

@@ -4,7 +4,7 @@
     "decorator": {
       "type": "minecraft:count",
       "config": {
-        "count": 2
+        "count": 256
       }
     },
     "feature": {
@@ -23,10 +23,10 @@
                 "height": {
                   "type": "minecraft:uniform",
                   "min_inclusive": {
-                    "above_bottom": 0
+                    "absolute": 0
                   },
                   "max_inclusive": {
-                    "absolute": 0
+                    "absolute": 64
                   }
                 }
               }
@@ -39,11 +39,11 @@
                 "targets": [
                   {
                     "target": {
-                      "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:base_stone_overworld"
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:diorite"
                     },
                     "state": {
-                      "Name": "minecraft:packed_ice"
+                      "Name": "minecraft:snow_block"
                     }
                   }
                 ]

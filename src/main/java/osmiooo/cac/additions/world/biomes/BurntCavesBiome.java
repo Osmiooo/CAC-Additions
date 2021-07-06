@@ -16,8 +16,8 @@ import net.minecraft.world.gen.surfacebuilder.ConfiguredSurfaceBuilders;
 
 //<>
 
-public class IceCavesBiome {
-    public static final RegistryKey<Biome> ICE_CAVES = registerBiome("ice_caves", createDefaultCaves());
+public class BurntCavesBiome {
+    public static final RegistryKey<Biome> BURNT_CAVES = registerBiome("burnt_caves", createDefaultCaves());
 
     private static RegistryKey<Biome> registerBiome(String key, Biome biome) {
         Identifier identifier = new Identifier("cacadditions", key);
@@ -41,7 +41,7 @@ public class IceCavesBiome {
         DefaultBiomeFeatures.addDefaultVegetation(generationSettings);
         DefaultBiomeFeatures.addSprings(generationSettings);
         DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
-        return new Biome.Builder().precipitation(Biome.Precipitation.SNOW).category(Biome.Category.UNDERGROUND).depth(0.125F).scale(0.05F).temperature(0F).downfall(0.4F).effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(getSkyColorWithTemperatureModifier()).moodSound(BiomeMoodSound.CAVE).build()).spawnSettings(spawnSettings.build()).generationSettings(generationSettings.build()).build();
+        return new Biome.Builder().precipitation(Biome.Precipitation.RAIN).category(Biome.Category.UNDERGROUND).depth(0.1F).scale(0.05F).temperature(2.0F).downfall(0.4F).effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(getSkyColorWithTemperatureModifier()).moodSound(BiomeMoodSound.CAVE).build()).spawnSettings(spawnSettings.build()).generationSettings(generationSettings.build()).build();
     }
 
     private static int getSkyColorWithTemperatureModifier() {

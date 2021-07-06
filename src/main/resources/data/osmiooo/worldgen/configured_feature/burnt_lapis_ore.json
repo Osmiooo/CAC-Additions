@@ -28,7 +28,7 @@
                     "absolute": 0
                   },
                   "max_inclusive": {
-                    "absolute": 60
+                    "absolute": 64
                   }
                 }
               }
@@ -42,10 +42,10 @@
                   {
                     "target": {
                       "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:coal_ores"
+                      "tag": "minecraft:lapis_ores"
                     },
                     "state": {
-                      "Name": "cacadditions:icy_coal_ore"
+                      "Name": "cacadditions:burnt_lapis_ore"
                     }
                   }
                 ]

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "cacadditions:icy_diamond_ore",
+    "cacadditions:iced_deepslate_diamond_ore", 
+    "cacadditions:burnt_diamond_ore",
+    "cacadditions:burnt_deepslate_diamond_ore"
+  ]
+}

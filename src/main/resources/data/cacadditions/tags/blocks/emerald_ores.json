@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:emerald_ore",
+    "minecraft:deepslate_emerald_ore",
+    "cacadditions:icy_emerald_ore",
+    "cacadditions:iced_deepslate_emerald_ore", 
+    "cacadditions:burnt_emerald_ore",
+    "cacadditions:burnt_deepslate_emerald_ore"
+  ]
+}

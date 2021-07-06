@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lapis_ore",
+    "minecraft:deepslate_lapis_ore",
+    "cacadditions:icy_lapis_ore",
+    "cacadditions:iced_deepslate_lapis_ore", 
+    "cacadditions:burnt_lapis_ore",
+    "cacadditions:burnt_deepslate_lapis_ore"
+  ]
+}

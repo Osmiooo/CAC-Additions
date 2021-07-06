@@ -4,7 +4,7 @@
     "decorator": {
       "type": "minecraft:count",
       "config": {
-        "count": 2
+        "count": 256
       }
     },
     "feature": {
@@ -38,12 +38,30 @@
                 "discard_chance_on_air_exposure": 0,
                 "targets": [
                   {
+                  "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:andesite"
+                  },
+                  "state": {
+                    "Name": "minecraft:magma_block"
+                    }
+                  },
+                  {
                     "target": {
-                      "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:base_stone_overworld"
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:diorite"
                     },
                     "state": {
-                      "Name": "minecraft:packed_ice"
+                      "Name": "minecraft:magma_block"
+                      }
+                    },
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:granite"
+                    },
+                    "state": {
+                      "Name": "minecraft:magma_block"
                     }
                   }
                 ]

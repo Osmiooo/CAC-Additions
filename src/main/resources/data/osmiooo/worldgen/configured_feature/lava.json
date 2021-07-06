@@ -25,10 +25,10 @@
                 "height": {
                   "type": "minecraft:uniform",
                   "min_inclusive": {
-                    "absolute": 0
+                    "absolute": -64
                   },
                   "max_inclusive": {
-                    "absolute": 60
+                    "absolute": 1
                   }
                 }
               }
@@ -41,11 +41,14 @@
                 "targets": [
                   {
                     "target": {
-                      "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:base_stone_overworld"
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:water"
                     },
                     "state": {
-                      "Name": "cacadditions:icy_stone"
+                      "Name": "minecraft:lava",
+                      "Properties": {
+                        "level": "0"
+                      }
                     }
                   }
                 ]

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore",
+    "cacadditions:icy_copper_ore",
+    "cacadditions:iced_deepslate_copper_ore", 
+    "cacadditions:burnt_copper_ore",
+    "cacadditions:burnt_deepslate_copper_ore"
+  ]
+}

@@ -2,9 +2,11 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count",
+      "type": "minecraft:count_extra",
       "config": {
-        "count": 2
+        "count": 256,
+        "extra_count": 2000,
+        "extra_chance": 1
       }
     },
     "feature": {
@@ -23,10 +25,10 @@
                 "height": {
                   "type": "minecraft:uniform",
                   "min_inclusive": {
-                    "absolute": 0
+                    "above_bottom": -64
                   },
                   "max_inclusive": {
-                    "absolute": 64
+                    "absolute": 16
                   }
                 }
               }
@@ -39,11 +41,11 @@
                 "targets": [
                   {
                     "target": {
-                      "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:base_stone_overworld"
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:deepslate"
                     },
                     "state": {
-                      "Name": "minecraft:snow_block"
+                      "Name": "cacadditions:burnt_deepslate"
                     }
                   }
                 ]

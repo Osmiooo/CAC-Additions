@@ -25,10 +25,10 @@
                 "height": {
                   "type": "minecraft:uniform",
                   "min_inclusive": {
-                    "above_bottom": 0
+                    "absolute": 0
                   },
                   "max_inclusive": {
-                    "absolute": 0
+                    "absolute": 64
                   }
                 }
               }
@@ -42,10 +42,10 @@
                   {
                     "target": {
                       "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:base_stone_overworld"
+                      "tag": "minecraft:coal_ores"
                     },
                     "state": {
-                      "Name": "cacadditions:iced_deepslate"
+                      "Name": "cacadditions:burnt_coal_ore"
                     }
                   }
                 ]

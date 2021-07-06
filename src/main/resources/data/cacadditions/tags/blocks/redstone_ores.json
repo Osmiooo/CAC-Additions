@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:redstone_ore",
+    "minecraft:deepslate_redstone_ore",
+    "cacadditions:icy_redstone_ore",
+    "cacadditions:iced_deepslate_redstone_ore", 
+    "cacadditions:burnt_redstone_ore",
+    "cacadditions:burnt_deepslate_redstone_ore"
+  ]
+}

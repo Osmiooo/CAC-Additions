@@ -3,11 +3,7 @@ package osmiooo.cac.additions;
 import com.alphastudios.cavebiomeapi.core.api.CaveBiomeAPI;
 import com.google.common.reflect.Reflection;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
@@ -18,9 +14,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.biome.Biome;
 import osmiooo.cac.additions.block.IcyStoneBlock;
+import osmiooo.cac.additions.world.biomes.BurntCavesBiome;
 import osmiooo.cac.additions.world.biomes.IceCavesBiome;
 
 public class CACAdditions implements ModInitializer {
@@ -155,13 +151,15 @@ public class CACAdditions implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("cacadditions", "burnt_deepslate_diamond_ore"), new BlockItem(BURNT_DEEPSLATE_DIAMOND_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 
 		Reflection.initialize(
-			IceCavesBiome.class
+			IceCavesBiome.class,
+			BurntCavesBiome.class
 		);
 
 	}
 
 	public static void addDefaultCaves() {
 		CaveBiomeAPI.addCaveBiome(IceCavesBiome.ICE_CAVES, new Biome.MixedNoisePoint(-0.745F, -0.475F, -0.15F, -0.215F, 0.0F));
+		CaveBiomeAPI.addCaveBiome(BurntCavesBiome.BURNT_CAVES, new Biome.MixedNoisePoint(-0.74F, -0.45F, -0.15F, - 0.15F, 0.0F));
 	}
 	
 	static {

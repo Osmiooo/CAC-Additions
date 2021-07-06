@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_ore",
+    "minecraft:deepslate_iron_ore",
+    "cacadditions:icy_iron_ore",
+    "cacadditions:iced_deepslate_iron_ore", 
+    "cacadditions:burnt_iron_ore",
+    "cacadditions:burnt_deepslate_iron_ore"
+  ]
+}

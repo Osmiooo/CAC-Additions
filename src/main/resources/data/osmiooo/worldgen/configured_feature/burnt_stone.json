@@ -2,9 +2,11 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count",
+      "type": "minecraft:count_extra",
       "config": {
-        "count": 2
+        "count": 256,
+        "extra_count": 2000,
+        "extra_chance": 1
       }
     },
     "feature": {
@@ -26,7 +28,7 @@
                     "absolute": 0
                   },
                   "max_inclusive": {
-                    "absolute": 64
+                    "absolute": 60
                   }
                 }
               }
@@ -34,16 +36,16 @@
             "feature": {
               "type": "minecraft:ore",
               "config": {
-                "size": 16,
+                "size": 64,
                 "discard_chance_on_air_exposure": 0,
                 "targets": [
                   {
                     "target": {
-                      "predicate_type": "minecraft:tag_match",
-                      "tag": "minecraft:base_stone_overworld"
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:stone"
                     },
                     "state": {
-                      "Name": "minecraft:powder_snow"
+                      "Name": "cacadditions:burnt_stone"
                     }
                   }
                 ]
