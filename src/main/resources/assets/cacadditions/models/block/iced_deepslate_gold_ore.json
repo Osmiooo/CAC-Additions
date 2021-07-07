@@ -1,10 +1,10 @@
 {   
     "parent": "block/orientable",
     "textures": {
-        "top": "cacadditions:block/iced_deepslate_gold_ore_top",
+        "top": "cacadditions:block/iced_deepslate_gold_ore",
         "front": "cacadditions:block/iced_deepslate_gold_ore",
         "side": "cacadditions:block/iced_deepslate_gold_ore",
         "back": "cacadditions:block/iced_deepslate_gold_ore",
-        "bottom": "cacadditions:block/iced_deepslate_gold_ore_top"
+        "bottom": "cacadditions:block/iced_deepslate_gold_ore"
     }
   }  

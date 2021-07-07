@@ -159,7 +159,7 @@ public class CACAdditions implements ModInitializer {
 
 	public static void addDefaultCaves() {
 		CaveBiomeAPI.addCaveBiome(IceCavesBiome.ICE_CAVES, new Biome.MixedNoisePoint(-0.745F, -0.475F, -0.15F, -0.215F, 0.0F));
-		CaveBiomeAPI.addCaveBiome(BurntCavesBiome.BURNT_CAVES, new Biome.MixedNoisePoint(-0.74F, -0.45F, -0.15F, - 0.15F, 0.0F));
+		CaveBiomeAPI.addCaveBiome(BurntCavesBiome.BURNT_CAVES, new Biome.MixedNoisePoint(-0.64F, -0.411F, -0.15F, - 0.15F, 0.0F));
 	}
 	
 	static {
