@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Caves And Cliffs Additions"
+        },
+        "description": {
+            "text": "Download and play with the mod."
+        },
+        "icon": {
+            "item": "cacadditions:burnt_diamond_ore"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "cacadditions:textures/gui/advancements/icy_stone.png"
+    },
+    "criteria": {
+        "downloadmod": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "downloadmod"
+        ]
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "cacadditions:icy_stone"
+    },
+    "title": "Icy there...",
+    "description": "Go on an ice cave"
+  },
+  "parent": "cacadditions:cacadditions/root",
+  "criteria": {
+    "go_on_ice_cave": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "biome": "cacadditions:ice_caves"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "go_on_ice_cave"
+    ]
+  ]
+}

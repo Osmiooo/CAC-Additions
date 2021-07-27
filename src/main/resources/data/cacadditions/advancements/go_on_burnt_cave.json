@@ -1,0 +1,31 @@
+{
+  "display": {
+      "title": {
+          "text": "That's really burnt here..."
+      },
+      "description": {
+          "text": "Go on a burnt cave"
+      },
+      "icon": {
+          "item": "minecraft:stone"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+      "go_on_burnt_cave": {
+          "trigger": "minecraft:location",
+          "conditions": {
+              "biome": "cacadditions:burnt_caves"
+          }
+      }
+  },
+  "requirements": [
+      [
+          "go_on_burnt_cave"
+      ]
+  ],
+  "parent": "caves_and_cliffs_additions:root"
+}
